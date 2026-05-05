@@ -5,8 +5,7 @@ jobs:
     First-job:
         runs-on: ubuntu-latest
         steps:
-            - run: ${{ toJSON(github) }}
-            - run: ${{ toJSON(secrets) }}
-            - run: ${{ toJSON(vars) }}
-            - run: ${{ toJSON(env) }}
+            - name: Show github
+              run: ${{ toJSON(github) }}
+
 
