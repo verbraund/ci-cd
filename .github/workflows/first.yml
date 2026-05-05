@@ -1,0 +1,10 @@
+name: First workflow
+on: push
+
+jobs:
+    First-job:
+        runs-on: ubuntu-latest
+        steps:
+            - name: First step
+              run: echo 'hello github'
+            - run: pwd
