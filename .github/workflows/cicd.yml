@@ -1,0 +1,15 @@
+name: CI-CD
+on:
+    push:
+        branches:
+            - main
+
+jobs:
+    Build:
+        runs-on: ubuntu-latest
+        steps:
+            - run: ls -la
+            - uses: actions/checkout@v6
+            - run: ls -la
+
+
