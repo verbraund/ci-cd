@@ -1,13 +1,13 @@
 name: CI-CD
-on:
-    pull_request:
-        branches:
-            - main
+on: push
 
 jobs:
-    Test:
+    test:
         runs-on: ubuntu-latest
         steps:
-            - uses: actions/checkout@v6
-            - run: npm install
-            - run: npm test
+            -   name: Composer install
+                run: echo "$(composer config cache-files-dir)"
+
+
+
+
