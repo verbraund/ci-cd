@@ -5,8 +5,8 @@ jobs:
     test:
         runs-on: ubuntu-latest
         steps:
-            -   name: Composer install
-                run: echo "$(composer config cache-files-dir)"
+            -   name: Composer cache dir
+                run: echo "$(composer config --global cache-files-dir)"
 
 
 
